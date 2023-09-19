@@ -6,25 +6,32 @@ import java.util.HashMap;
 import java.util.Map;
 public class Main {
     public static void main(String[] args) {
-        Map<String,List<String>>HanshinTigersPlayersForEach = new HashMap<>();
+        Map<String,List<String>>hanshinTigersPlayersForEach = new HashMap<>();
 
-        List <String>HanshinTigersPitcher= new ArrayList<>();
-        HanshinTigersPitcher.add("村上頌樹");
-        HanshinTigersPitcher.add("佐々木朗希");
-        HanshinTigersPitcher.add("山本由伸");
-        HanshinTigersPlayersForEach.put("阪神タイガースのピッチャー",HanshinTigersPitcher);
+        List <String>hanshinTigersPitcher= new ArrayList<>();
+        hanshinTigersPitcher.add("村上頌樹");
+        hanshinTigersPitcher.add("岩崎優");
+        hanshinTigersPitcher.add("伊藤将司");
+        hanshinTigersPitcher.add("大竹耕太郎");
+        hanshinTigersPlayersForEach.put("阪神タイガースのピッチャー",hanshinTigersPitcher);
 
-        List <String>HanshinTigersShortstop= new ArrayList<>();
-        HanshinTigersShortstop.add("源田壮亮");
-        HanshinTigersShortstop.add("木浪聖也");
-        HanshinTigersShortstop.add("坂本勇人");
-        HanshinTigersPlayersForEach.put("阪神タイガースのショート",HanshinTigersShortstop);
+        List<String> hanshinTigersCatcher = new ArrayList<>();
+        hanshinTigersCatcher.add("梅野隆太郎");
+        hanshinTigersCatcher.add("坂本誠志郎");
+        hanshinTigersPlayersForEach.put("阪神タイガースのキャッチャー", hanshinTigersCatcher);
 
-        List <String>HanshinTigersThirdbaseman= new ArrayList<>();
-        HanshinTigersThirdbaseman.add("佐藤輝明");
-        HanshinTigersThirdbaseman.add("岡本和真");
-        HanshinTigersThirdbaseman.add("村上宗隆");
-        HanshinTigersPlayersForEach.put("阪神タイガースのサード",HanshinTigersThirdbaseman);
+        List<String> hanshinTigersInfielder = new ArrayList<>();
+        hanshinTigersInfielder.add("木浪聖也");
+        hanshinTigersInfielder.add("中野拓夢");
+        hanshinTigersInfielder.add("大山悠輔");
+        hanshinTigersInfielder.add("佐藤輝明");
+        hanshinTigersPlayersForEach.put("阪神タイガースの内野手", hanshinTigersInfielder);
+
+        List<String> hanshinTigersOutfielder = new ArrayList<>();
+        hanshinTigersOutfielder.add("近本光司");
+        hanshinTigersOutfielder.add("ノイジー");
+        hanshinTigersOutfielder.add("森下翔太");
+        hanshinTigersPlayersForEach.put("阪神タイガースの外野手", hanshinTigersOutfielder);
 
         System.out.println("阪神タイガースの選手は"+HanshinTigersPlayersForEach.get("村上頌樹"));
 
